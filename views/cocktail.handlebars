@@ -1,26 +1,25 @@
 <div class="container text-center bg-success p-2 text-dark bg-opacity-25">
     <div class="row">
-<nav class="navbar bg-info.bg-gradient ">
+<nav class="navbar bg-info.bg-gradient mr-2 ml-2">
   <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1 text-white">Pesquise qualquer CockTail Por receita ou Ingrediente</span>
+    <span class="navbar-brand h1 text-white mx-auto">Pesquise qualquer CockTail Por Nome ou Ingrediente</span>
   </div>
 </nav>
 <form  class="text-center" action="/" method="GET">
-  <div class="row mb-12 justify-content-center">
+  <div class="row mb-11 justify-content-center">
           <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-7  mx-3">
       <input type="text" class="form-control" id="searchInput" name="cocktailName" placeholder="Digite Aqui sua pesquisa">
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-1">
       <button type="submit" class="btn btn-outline-secondary">Pesquisar</button>
     </div>
   </div>
+  </div>
 </form>
 
-<!-- Adicione um bloco para mostrar os resultados -->
-<!-- cocktail.handlebars -->
 
-<div class="accordion accordion-flush mt-5 mb-5" id="accordionFlushExample">
+<div class="col-sm-11 accordion accordion-flush mt-5 mb-5 mx-4" id="accordionFlushExample">
   {{#each cocktails}}
     <div class="accordion-item">
       <h2 class="accordion-header">
@@ -41,3 +40,4 @@
     </div>
   {{/each}}
 </div>
+
